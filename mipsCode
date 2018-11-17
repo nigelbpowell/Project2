@@ -1,0 +1,5 @@
+# PROGRAM: Project 2
+.data
+inputTooLong: .asciiz "Input is too long."
+baseInvalid: .asciiz "Invalid base-34 number." 
+inputEmpty: .asciiz "Input is empty."
