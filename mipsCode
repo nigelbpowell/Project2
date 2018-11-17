@@ -123,4 +123,8 @@ longInputError:
 invalidBaseError:
 	la $a0, baseInvalid 
 	li $v0, 4 
+	syscall
+	li $v0,10 
+	syscall	 
 
+	jr $ra	
