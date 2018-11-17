@@ -63,4 +63,8 @@ lengthFinder:
 	beq $t1, 0, doMisc
 	beq $t1, 32, doMisc
 	beq $t3, 5, longInputError
-
+	j lengthFinder
+doMisc:
+	sub $t0, $t0, $t3
+	sub $t3, $t3, $t4
+	lb $t1, ($t0)
