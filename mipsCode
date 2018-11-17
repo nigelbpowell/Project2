@@ -43,4 +43,8 @@ showCharsOrSpaces:
 	addi $t3, $t3, 1
 	beq $t1, 10, backToBeginning
 	beq $t1, 0, backToBeginning
-
+	bne $t1, 32, invalidBaseError
+	j showCharsOrSpaces
+backToBeginning:
+	sub $t0, $t0, $t3 	
+	la $t3, 0 		
