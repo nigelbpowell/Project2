@@ -68,3 +68,8 @@ doMisc:
 	sub $t0, $t0, $t3
 	sub $t3, $t3, $t4
 	lb $t1, ($t0)
+	sub $s1, $t3, $t4
+greatestPowerFinder:	
+	beq $s1, 0, AsciiConvert		
+	mult $t4, $s0
+	mflo $t4
