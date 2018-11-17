@@ -118,4 +118,9 @@ longInputError:
 	la $a0, inputTooLong 
 	li $v0, 4 		
 	syscall
+	li $v0,10 
+	syscall
+invalidBaseError:
+	la $a0, baseInvalid 
+	li $v0, 4 
 
