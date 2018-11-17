@@ -3,3 +3,8 @@
 inputTooLong: .asciiz "Input is too long."
 baseInvalid: .asciiz "Invalid base-34 number." 
 inputEmpty: .asciiz "Input is empty."
+stringInput: .space 40000
+.text
+
+main:
+li $v0, 8  
