@@ -73,3 +73,8 @@ greatestPowerFinder:
 	beq $s1, 0, AsciiConvert		
 	mult $t4, $s0
 	mflo $t4
+	sub $s1, $s1, 1
+	j greatestPowerFinder
+multiply:
+	mult $t1, $t4
+	mflo $t5		
