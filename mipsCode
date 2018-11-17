@@ -98,3 +98,9 @@ AsciiConvert:
 	blt $t1, 89, upperCase 
 	blt $t1, 97, invalidBaseError 
 	blt $t1, 121, lowerCase 
+	blt $t1, 128, invalidBaseError 
+upperCase:
+	addi $t1, $t1, -55 
+	j multiply 			
+lowerCase:
+
