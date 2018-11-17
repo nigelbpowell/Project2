@@ -13,3 +13,8 @@ li $a1, 40000
 syscall
 add $t1, $0, 0 
 add $t3, $0, 0 
+add $t7, $0, 2
+la $t0, stringInput			
+lb $t1,0($t0) 					
+beq $t1, 10, emptyInputError 	
+beq $t1, 0 emptyInputError
