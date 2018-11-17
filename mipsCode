@@ -8,3 +8,8 @@ stringInput: .space 40000
 
 main:
 li $v0, 8  
+la $a0, stringInput
+li $a1, 40000
+syscall
+add $t1, $0, 0 
+add $t3, $0, 0 
