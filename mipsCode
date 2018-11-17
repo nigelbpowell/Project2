@@ -47,4 +47,10 @@ showCharsOrSpaces:
 	j showCharsOrSpaces
 backToBeginning:
 	sub $t0, $t0, $t3 	
-	la $t3, 0 		
+	la $t3, 0 
+advanceForward:
+	lb $t1,0($t0)
+	addi $t0, $t0, 1
+	beq $t1, 32, advanceForward
+	
+
