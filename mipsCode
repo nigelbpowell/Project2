@@ -53,4 +53,10 @@ advanceForward:
 	addi $t0, $t0, 1
 	beq $t1, 32, advanceForward
 	
+addi $t0, $t0, -1
+
+lengthFinder:
+	lb $t1, ($t0)
+	addi $t0, $t0, 1
+	
 
