@@ -103,4 +103,8 @@ upperCase:
 	addi $t1, $t1, -55 
 	j multiply 			
 lowerCase:
-
+	addi $t1, $t1, -87 	
+	j multiply				
+Number:
+	addi $t1, $t1, -48 	
+	j multiply		
