@@ -28,3 +28,9 @@ skipSpaces:
 	addi $t0, $t0, 1
 	addi $t3, $t3, 1
 	beq $t1, 32, skipSpaces
+	beq $t1, 10, emptyInputError
+	beq $t1, $0, emptyInputError
+showChars:
+	lb $t1,0($t0)
+	addi $t0, $t0, 1
+
