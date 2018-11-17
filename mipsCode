@@ -107,4 +107,10 @@ lowerCase:
 	j multiply				
 Number:
 	addi $t1, $t1, -48 	
-	j multiply		
+	j multiply
+emptyInputError:
+	la $a0, inputEmpty 
+	li $v0, 4 
+	syscall
+	li $v0,10 
+
