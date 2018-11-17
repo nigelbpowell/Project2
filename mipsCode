@@ -93,3 +93,8 @@ Exit:
 	syscall
 AsciiConvert:
 	blt $t1, 48, invalidBaseError
+	blt $t1, 58, Number 
+	blt $t1, 65, invalidBaseError 
+	blt $t1, 89, upperCase 
+	blt $t1, 97, invalidBaseError 
+	blt $t1, 121, lowerCase 
