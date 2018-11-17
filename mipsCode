@@ -18,3 +18,9 @@ la $t0, stringInput
 lb $t1,0($t0) 					
 beq $t1, 10, emptyInputError 	
 beq $t1, 0 emptyInputError
+addi $s0, $0, 34 	
+addi $t4, $0, 1 	
+addi $t5, $0, 0 	
+addi $t6, $0, 0
+
+
